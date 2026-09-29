@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu — Bean & Squirrel</title>
+    <link rel="icon" href="logo 1.png" type="image/png">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap"rel="stylesheet"/>
+  </head>
+
+  <body class="bg-[#17100c] text-[#f4efe8] font-['Montserrat']">
+    <!-- Header -->
+    <header class="relative h-[520px] overflow-hidden">
+      <video
+        class="absolute inset-0 w-full h-full object-cover"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="hero.png">
+        <source src="cafe-video2.mp4" type="video/mp4" />
+      </video>
+
+      <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30"></div>
+
+      <nav class="absolute top-0 left-0 right-0 z-20 px-[6%] py-5 flex items-center justify-between">
+        <a href="index.html" class="w-40 md:w-48">
+          <img src="logo.png" alt="Bean & Squirrel" />
+        </a>
+
+        <div class="hidden md:flex items-center gap-8 font-semibold">
+          <a href="index.html" class="hover:text-[#c59b73] transition">Home</a>
+          <a href="Menu.html" class="text-[#c59b73] border-b border-[#c59b73] pb-2">Menu</a>
+          <a href="About.html" class="hover:text-[#c59b73] transition">About</a>
+          <a href="Services.html" class="hover:text-[#c59b73] transition">Services</a>
+          <a href="Gallery.html" class="hover:text-[#c59b73] transition">Gallery</a>
+          <a href="Contact.html" class="hover:text-[#c59b73] transition">Contact</a>
+
+          <a href="Login.html" class="flex items-center gap-2 bg-[#71391c] px-5 py-2.5 rounded hover:bg-[#8b4c27] transition">
+            <img src="line-login-svgrepo-com.svg" alt="Login" class="w-4 h-4" />
+            Login
+          </a>
+        </div>
+
+        <details class="md:hidden relative">
+          <summary class="list-none cursor-pointer text-3xl">☰</summary>
+
+          <div class="absolute right-0 top-12 w-52 bg-[#120a07] border border-[#624733] rounded p-5">
+            <div class="flex flex-col gap-4 text-center">
+              <a href="index.html">Home</a>
+              <a href="Menu.html">Menu</a>
+              <a href="About.html">About</a>
+              <a href="Services.html">Services</a>
+              <a href="Gallery.html">Gallery</a>
+              <a href="Contact.html">Contact</a>
+
+              <a href="Login.html" class="bg-[#71391c] py-2 rounded"> Login </a>
+            </div>
+          </div>
+        </details>
+      </nav>
+
+      <div class="relative z-10 h-full flex items-center justify-center text-center px-5">
+        <div>
+          <div class="flex justify-center items-center gap-3 text-[#d8c7b7] text-xs tracking-[3px]">
+            OUR MENU
+            <span class="w-8 h-px bg-[#c59b73]"></span>
+          </div>
+
+          <h1 class="font-['Cormorant_Garamond'] text-6xl md:text-7xl mt-5">
+            Taste the <em class="text-[#c59b73]">Moment.</em>
+          </h1>
+
+          <p class="max-w-xl mx-auto mt-5 text-[#d6cec6] leading-7">
+            Handcrafted coffee, fresh treats, and delicious moments made
+            especially for you.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Coffee -->
+    <section class="px-[7%] py-16">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center">
+          <p class="text-[#c59b73] text-xs tracking-[3px]">COFFEE</p>
+          <h2 class="font-['Cormorant_Garamond'] text-5xl mt-2">Our Coffee</h2>
+          <p class="text-[#c7b8ad] text-sm mt-3">
+            Carefully selected beans. Beautifully crafted cups.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+          <article class="bg-[#1b120d] border border-[#6e4d36] rounded-lg overflow-hidden hover:-translate-y-2 transition">
+            <img src="Espresso.jpg" alt="Espresso" class="w-full h-52 object-cover"/>
+
+            <div class="p-6">
+              <div class="flex justify-between">
+                <h3 class="font-['Cormorant_Garamond'] text-2xl">Espresso</h3>
+                <span class="text-[#c59b73]">$3.50</span>
+              </div>
+
+              <p class="text-sm text-[#c6bbb3] mt-3">
+                Rich, bold and perfectly balanced.
+              </p>
+            </div>
+          </article>
+
+          <article class="bg-[#1b120d] border border-[#6e4d36] rounded-lg overflow-hidden hover:-translate-y-2 transition">
+            <img src="Cappuccino.jpg" alt="Cappuccino"class="w-full h-52 object-cover">
+
+            <div class="p-6">
+              <div class="flex justify-between">
+                <h3 class="font-['Cormorant_Garamond'] text-2xl">Cappuccino</h3>
+                <span class="text-[#c59b73]">$5.00</span>
+              </div>
+
+              <p class="text-sm text-[#c6bbb3] mt-3">
+                Smooth espresso with creamy steamed milk.
+              </p>
+            </div>
+          </article>
+
+          <article class="bg-[#1b120d] border border-[#6e4d36] rounded-lg overflow-hidden hover:-translate-y-2 transition">
+            <img src="Latte.jpg" alt="Latte" class="w-full h-52 object-cover"/>
+
+            <div class="p-6">
+              <div class="flex justify-between">
+                <h3 class="font-['Cormorant_Garamond'] text-2xl">Latte</h3>
+                <span class="text-[#c59b73]">$5.50</span>
+              </div>
+
+              <p class="text-sm text-[#c6bbb3] mt-3">
+                Silky milk and rich espresso in every cup.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Treats -->
+    <section class="bg-[#120b08] px-[7%] py-16">
+      <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-[#c59b73] text-xs tracking-[3px]">SWEET TREATS</p>
+          <h2 class="font-['Cormorant_Garamond'] text-5xl mt-3">
+            Something <em class="text-[#c59b73]">Sweet.</em>
+          </h2>
+
+          <p class="text-[#d1c5bc] leading-7 mt-5">
+            Complete your coffee moment with one of our freshly prepared cakes
+            and delicious treats.
+          </p>
+
+          <div class="mt-8 space-y-5">
+            <div class="flex justify-between border-b border-[#624733] pb-4">
+              <div>
+                <h3 class="font-['Cormorant_Garamond'] text-xl">
+                  Chocolate Cake
+                </h3>
+                <p class="text-xs text-[#aaa098] mt-1">
+                  Rich chocolate and soft cream
+                </p>
+              </div>
+              <span class="text-[#c59b73]">$6.00</span>
+            </div>
+
+            <div class="flex justify-between border-b border-[#624733] pb-4">
+              <div>
+                <h3 class="font-['Cormorant_Garamond'] text-xl">
+                  Fresh Croissant
+                </h3>
+                <p class="text-xs text-[#aaa098] mt-1">
+                  Buttery and freshly baked
+                </p>
+              </div>
+              <span class="text-[#c59b73]">$4.00</span>
+            </div>
+
+            <div class="flex justify-between border-b border-[#624733] pb-4">
+              <div>
+                <h3 class="font-['Cormorant_Garamond'] text-xl">Berry Cake</h3>
+                <p class="text-xs text-[#aaa098] mt-1">
+                  Fresh berries and cream
+                </p>
+              </div>
+              <span class="text-[#c59b73]">$6.50</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="cake1.png" alt="Fresh cake" class="w-full h-[420px] object-cover rounded-lg hover:scale-[1.02] transition duration-500"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coffee Experience -->
+    <section class="relative h-[330px] overflow-hidden">
+      <video
+        class="absolute inset-0 w-full h-full object-cover"
+        autoplay
+        muted
+        loop
+        playsinline>
+        <source src="cafe-video5.mp4" type="video/mp4" />
+      </video>
+
+      <div class="absolute inset-0 bg-black/65"></div>
+      <div class="relative z-10 h-full flex items-center justify-center text-center">
+        <div>
+          <p class="text-[#c59b73] tracking-[3px] text-xs">COFFEE EXPERIENCE</p>
+          <h2 class="font-['Cormorant_Garamond'] text-5xl mt-3">
+            Every Cup Has a <em class="text-[#c59b73]">Story.</em>
+          </h2>
+
+          <a href="Contact.html" class="inline-block mt-6 bg-[#71391c] px-7 py-3 rounded hover:bg-[#8b4c27] transition">
+            Visit Us Today →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0c0705] px-[7%] py-12">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <!-- Brand -->
+
+        <div>
+          <img src="logo.png" alt="Bean & Squirrel" class="w-44" />
+
+          <p class="text-[#c6bbb3] text-sm leading-6 mt-4 max-w-xs">
+            More than just coffee. We're a community, a cozy space, and a place
+            where good things happen over a cup.
+          </p>
+        </div>
+
+        <!-- Explore -->
+        <div>
+          <h3 class="font-['Cormorant_Garamond'] text-xl mb-4">Explore</h3>
+
+          <div class="flex flex-col gap-2 text-sm text-[#bbb0a8]">
+            <a href="index.html" class="hover:text-[#c59b73]">Home</a>
+            <a href="Menu.html" class="hover:text-[#c59b73]">Menu</a>
+            <a href="About.html" class="hover:text-[#c59b73]">About</a>
+            <a href="Services.html" class="hover:text-[#c59b73]">Services</a>
+            <a href="Gallery.html" class="hover:text-[#c59b73]">Gallery</a>
+            <a href="Contact.html" class="hover:text-[#c59b73]">Contact</a>
+          </div>
+        </div>
+
+        <!-- Visit -->
+        <div>
+          <h3 class="font-['Cormorant_Garamond'] text-xl mb-4">Visit Us</h3>
+
+          <div class="text-sm text-[#bdb2aa] space-y-3">
+            <p>⌖ Kabul, Afghanistan</p>
+            <p>☎ +93 70 000 0000</p>
+            <p>✉ rowaidarahimi259@gmail.com</p>
+            <p>◷ Mon - Fri: 7:00 AM - 9:00 PM</p>
+          </div>
+        </div>
+
+        <!-- Social -->
+        <div>
+          <h3 class="font-['Cormorant_Garamond'] text-xl mb-4">Follow Us</h3>
+          <div class="flex flex-wrap gap-3">
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/rowaidarahimi/"
+              rel="noopener"
+              target="_blank"
+              class="w-9 h-9 rounded-full border border-[#79583e] flex items-center justify-center hover:bg-[#71391c] transition"
+              aria-label="LinkedIn"
+            >
+              in
+            </a>
+
+            <!-- GitHub -->
+            <a
+              href="https://github.com/RowaidaRahimi"
+              rel="noopener"
+              target="_blank"
+              class="w-9 h-9 rounded-full border border-[#79583e] flex items-center justify-center hover:bg-[#71391c] transition"
+              aria-label="GitHub"
+            >
+              <img
+                src="github-142-svgrepo-com.svg"
+                alt="GitHub"
+                class="w-4 h-4"
+              />
+            </a>
+
+            <!-- Email -->
+            <a
+              href="mailto:rowaidarahimi259@gmail.com"
+              class="w-9 h-9 rounded-full border border-[#79583e] flex items-center justify-center hover:bg-[#71391c] transition"
+              aria-label="Email"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-envelope-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="max-w-6xl mx-auto mt-10 pt-5 border-t border-[#7e5839]/50 text-center"
+      >
+        <p class="text-[#827871] text-xs">
+          © 2026 Bean & Squirrel Coffee House Designe by Rowaida Rahimi All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

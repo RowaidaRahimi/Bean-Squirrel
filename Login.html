@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login — Bean & Squirrel</title>
+    <link rel="icon" href="logo1.png" type="image/png">
+    <link rel="stylesheet" href="./output.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap"rel="stylesheet"/>
+  </head>
+
+  <body class="min-h-screen bg-[#120b08] text-white font-['Montserrat']">
+    <!-- Login -->
+    <main class="min-h-screen grid lg:grid-cols-2">
+      <!-- Video -->
+      <div class="relative hidden lg:block overflow-hidden">
+        <video
+          class="absolute inset-0 w-full h-full object-cover"
+          autoplay
+          muted
+          loop
+          playsinline>
+          <source src="Login.mp4" type="video/mp4" />
+        </video>
+
+        <div class="absolute inset-0 bg-black/65"></div>
+        <div class="relative z-10 h-full flex items-end p-16">
+          <div>
+            <p class="text-[#c59b73] tracking-[3px]">BEAN & SQUIRREL</p>
+            <h1 class="font-['Cormorant_Garamond'] text-6xl mt-3">
+              Welcome <em class="text-[#c59b73]">Back.</em>
+            </h1>
+            <p class="mt-4 text-[#d1c5bc]">Good coffee. Better moments.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="flex items-center justify-center p-8">
+        <div class="w-full max-w-md">
+          <a href="index.html" class="inline-block mb-12">
+            <img src="logo.png" alt="Bean & Squirrel" class="w-48" />
+          </a>
+
+          <p class="text-[#c59b73] text-sm tracking-[3px]">WELCOME BACK</p>
+          <h2 class="font-['Cormorant_Garamond'] text-5xl mt-3">Login</h2>
+
+          <form class="mt-8 space-y-5">
+            <div>
+              <label class="block mb-2 text-sm"> Email </label>
+              <input
+                type="email"
+                required
+                placeholder="Enter your email"
+                class="w-full h-12 bg-[#0f0906] border border-[#5e4736] rounded px-4 outline-none focus:border-[#a17f60]"/>
+            </div>
+
+            <div>
+              <label class="block mb-2 text-sm"> Password </label>
+              <input
+                type="password"
+                required
+                placeholder="Enter your password"
+                class="w-full h-12 bg-[#0f0906] border border-[#5e4736] rounded px-4 outline-none focus:border-[#a17f60]"/>
+            </div>
+
+            <button type="submit" class="w-full h-12 bg-[#71391c] rounded hover:bg-[#8b4c27] transition">
+              Login
+            </button>
+          </form>
+
+          <a href="index.html" class="block text-center mt-6 text-[#c59b73] hover:text-white">
+            ← Back to Home
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
